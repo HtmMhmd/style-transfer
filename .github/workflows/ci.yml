@@ -30,4 +30,7 @@ jobs:
         
     - name: Run quick style transfer test
       run: |
-        python main.py --steps 5 || echo "Main script executed with sample run"
+        python main.py --steps 5 --model vit || echo "Main script executed with sample run"
+        python main.py --steps 5 --model vgg || echo "Main script executed with sample run"
+
+
